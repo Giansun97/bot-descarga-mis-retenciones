@@ -1,0 +1,995 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,702" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="64">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="94">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,637" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Listado" />
+      <Variable x:TypeArguments="x:String" Name="Ubicacion" />
+      <Variable x:TypeArguments="x:Boolean" Name="ImageError" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 440,107.5 440,244</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">340,244</av:Point>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">440,296 440,326 150,326 150,339.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Read Excel" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" ReadOnly="True" WorkbookPath="Lista Descarga Mis Retenciones.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,171" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[Listado]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Listado" UseFilter="True">
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ExcelApplicationScope>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">50,339.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,81</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">150,420.5 150,450.5 460,450.5 460,454</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Proceso en el navegador" sap:VirtualizedContainerService.HintSize="842,4719" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="780,4608" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://auth.afip.gob.ar/contribuyente_/login.xhtml">
+              <ui:OpenBrowser.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="746,4506" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Listado]" DisplayName="Proceso en AFIP" sap:VirtualizedContainerService.HintSize="684,4395" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="650,4280" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="Ingreso a AFIP" sap:VirtualizedContainerService.HintSize="588,715" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="CUIT" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[Row(&quot;CUIT AFIP&quot;).ToString]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8d178f6-8001-4ca6-bdcb-7e8c112f057f" InformativeScreenshot="8c584bd3aa1dddffc305745f6f6da637" Selector="&lt;webctrl tag='INPUT' type='number' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Siguiente" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="66c2765f-de29-4212-8674-7167eb427338" InformativeScreenshot="2e6f83fdfc7003658d50f10adaf59942" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="CLAVE" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[Row(&quot;CLAVE&quot;).ToString]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8d178f6-8001-4ca6-bdcb-7e8c112f057f" InformativeScreenshot="83f4e0ffdadb54ac78556598ccc902f4" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Ingresar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="66c2765f-de29-4212-8674-7167eb427338" InformativeScreenshot="96b7c94dd857dc52d7706dd2ee524034" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                            <Sequence DisplayName="Seleccion de servicios" sap:VirtualizedContainerService.HintSize="588,3414" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="VER TODOS" sap:VirtualizedContainerService.HintSize="526,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c24c95f-5708-4648-b3e4-396f020171fb" InformativeScreenshot="4b442ad9313b25edfa6cae4cbd1f2083" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl aaname='Ver todos' innertext='Ver todos' visibleinnertext='Ver todos' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="mis retenciones" sap:VirtualizedContainerService.HintSize="526,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c05646e4-3dfd-497c-97a6-5f46d2c9f0c4" InformativeScreenshot="eec08ac7b9ac6054788b2f8f7e90d2c3" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl aaname='MIS RETENCIONES' innertext='MIS RETENCIONES' visibleinnertext='MIS RETENCIONES' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:ImageFound DisplayName="Imagen error" Found="[ImageError]" sap:VirtualizedContainerService.HintSize="526,107" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+                                <ui:ImageFound.Image>
+                                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                                </ui:ImageFound.Image>
+                                <ui:ImageFound.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6a912da4-05f1-4a52-9a56-d5ed1867d47a" TimeoutMS="5000">
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:ImageFound.Target>
+                              </ui:ImageFound>
+                              <If Condition="[ImageError = True]" sap:VirtualizedContainerService.HintSize="526,2862" sap2010:WorkflowViewState.IdRef="If_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="492,2680" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Hotkey" sap:VirtualizedContainerService.HintSize="450,153" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="w" KeyModifiers="Ctrl">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2687212-c87e-4bb7-9bc6-02f2ce5ceabb" InformativeScreenshot="465159cebdc73b67f8185d52a210bb0e" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='JBoss Web/7.0.13.Final - Error report - Google Chrome' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="mis retenciones" sap:VirtualizedContainerService.HintSize="450,107" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c05646e4-3dfd-497c-97a6-5f46d2c9f0c4" InformativeScreenshot="eec08ac7b9ac6054788b2f8f7e90d2c3" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl aaname='MIS RETENCIONES' innertext='MIS RETENCIONES' visibleinnertext='MIS RETENCIONES' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <Sequence DisplayName="Proceso en mis retenciones" sap:VirtualizedContainerService.HintSize="450,1654" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="CUIT RETENIDO" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[row(&quot;CUIT del retenido&quot;).ToString]">
+                                        <ui:SelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="8">
+                                            <x:String>Seleccione una CUIT...</x:String>
+                                            <x:String>20283423965</x:String>
+                                            <x:String>30712548564</x:String>
+                                            <x:String>20283423965</x:String>
+                                            <x:String>30708185759</x:String>
+                                          </scg:List>
+                                        </ui:SelectItem.Items>
+                                        <ui:SelectItem.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fbfd32d2-f3b5-4796-b157-84277cd0ffcc" InformativeScreenshot="12557df2c7acea11e37fc43a77ea12c2" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cuitRetenido' name='cuitRetenido' rowName='CUIT del retenido  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SelectItem.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:SelectItem>
+                                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Impuesto retenido" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="[row(&quot;Impuesto retenido&quot;).ToString]">
+                                        <ui:SelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="16">
+                                            <x:String></x:String>
+                                            <x:String>172 - IMPUESTO TRANSF DE INMUEBLES</x:String>
+                                            <x:String>210 - GANANCIAS REG ESP INGR RG 830</x:String>
+                                            <x:String>216 - SIRE - IVA</x:String>
+                                            <x:String>217 - SICORE-IMPTO.A LAS GANANCIAS</x:String>
+                                            <x:String>218 - IMP.A LAS GAN.- BENEF.DEL EXT.</x:String>
+                                            <x:String>219 - SICORE-IMPTO.S/ BS PERSONALES</x:String>
+                                            <x:String>466 - SICORE-PREMIOS JUEGOS Y C.DEP</x:String>
+                                            <x:String>767 - SICORE - RETENCIONES Y PERCEPC</x:String>
+                                            <x:String>787 - RET ART 79 LEY GCIAS INC A,ByC</x:String>
+                                            <x:String>939 - PERCEPCION IMPUESTO PAIS</x:String>
+                                          </scg:List>
+                                        </ui:SelectItem.Items>
+                                        <ui:SelectItem.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fbfd32d2-f3b5-4796-b157-84277cd0ffcc" InformativeScreenshot="cb02b994935272ba8d37285690ae480d" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='impuestos' rowName='Impuesto retenido   :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SelectItem.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:SelectItem>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Desde" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="[row(&quot;Desde&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="adae8b8a-a469-427e-adfb-68d34b2883eb" InformativeScreenshot="0c6185a38a1b0887b2848f7b90301bba" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='fechaRetencionDesde' rowName='Fecha Ret./Perc.  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Hasta" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[row(&quot;Hasta&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="adae8b8a-a469-427e-adfb-68d34b2883eb" InformativeScreenshot="61a9b623460945024a5a0b573d8d2ed4" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='fechaRetencionHasta' rowName='Fecha Ret./Perc.  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Consultar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="127ba47e-1a8c-49ae-ba72-595cca2f595f" InformativeScreenshot="077dde3e32f98ea8420b1a7388a9e882" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Consultar Mis Retenciones' class='inputbutton' uipath-html-title='Consultar Mis Retenciones' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                      <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Wait boton" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3" WaitActive="True" WaitVisible="True">
+                                        <ui:WaitUiElementAppear.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a9c874d-09ac-48f6-a083-30b385d540c9" InformativeScreenshot="6076bd22d9dc69527090f178b4b761d7" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Exportar a Excel' innertext='Exportar a Excel' visibleinnertext='Exportar a Excel' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:WaitUiElementAppear.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:WaitUiElementAppear>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Exportar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea071950-3fdf-43f8-86ee-501228785db0" InformativeScreenshot="6076bd22d9dc69527090f178b4b761d7" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Exportar a Excel' innertext='Exportar a Excel' visibleinnertext='Exportar a Excel' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[row(&quot;Nombre carpeta&quot;).ToString]" />
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DeselectAfter="True" DisplayName="Ubicacion + Nombre del archivo" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[row(&quot;Nombre carpeta&quot;).ToString + &quot;\&quot; + Row(&quot;Nombre Archivo&quot;).tostring]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b57ddb09-1ae6-44b7-bdb0-1440dde0486c" InformativeScreenshot="4cff9a97f5d8adc34504dc8fb630b5df" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Guardar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39fe2c94-c69c-4819-b244-6a4d3e921858" InformativeScreenshot="56f457bbf9a141e6755eb4b8727ecfd7" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd title='&amp;amp;Guardar' aaname='Guardar' cls='Button' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                    </Sequence>
+                                    <Sequence DisplayName="Salida de AFIP" sap:VirtualizedContainerService.HintSize="450,558" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Hotkey" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="w" KeyModifiers="Ctrl">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2687212-c87e-4bb7-9bc6-02f2ce5ceabb" InformativeScreenshot="465159cebdc73b67f8185d52a210bb0e" Selector="&lt;wnd app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas - Google C*' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e16dbbc3-1ae9-4c1a-9755-1a36ae43ceba" InformativeScreenshot="93a0aa4cad9e344d025b7b783d4632ad" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl id='iconoChicoContribuyenteAFIP' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Cerrar sesion" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e16dbbc3-1ae9-4c1a-9755-1a36ae43ceba" InformativeScreenshot="93a0aa4cad9e344d025b7b783d4632ad" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl aaname='Cerrar sesión' innertext='Cerrar sesión' visibleinnertext='Cerrar sesión' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                    </Sequence>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="492,1863" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Proceso en mis retenciones" sap:VirtualizedContainerService.HintSize="450,1654" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="CUIT RETENIDO" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="[row(&quot;CUIT del retenido&quot;).ToString]">
+                                        <ui:SelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="8">
+                                            <x:String>Seleccione una CUIT...</x:String>
+                                            <x:String>20283423965</x:String>
+                                            <x:String>30712548564</x:String>
+                                            <x:String>20283423965</x:String>
+                                            <x:String>30708185759</x:String>
+                                          </scg:List>
+                                        </ui:SelectItem.Items>
+                                        <ui:SelectItem.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fbfd32d2-f3b5-4796-b157-84277cd0ffcc" InformativeScreenshot="12557df2c7acea11e37fc43a77ea12c2" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cuitRetenido' name='cuitRetenido' rowName='CUIT del retenido  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SelectItem.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:SelectItem>
+                                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Impuesto retenido" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="[row(&quot;Impuesto retenido&quot;).ToString]">
+                                        <ui:SelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="16">
+                                            <x:String></x:String>
+                                            <x:String>172 - IMPUESTO TRANSF DE INMUEBLES</x:String>
+                                            <x:String>210 - GANANCIAS REG ESP INGR RG 830</x:String>
+                                            <x:String>216 - SIRE - IVA</x:String>
+                                            <x:String>217 - SICORE-IMPTO.A LAS GANANCIAS</x:String>
+                                            <x:String>218 - IMP.A LAS GAN.- BENEF.DEL EXT.</x:String>
+                                            <x:String>219 - SICORE-IMPTO.S/ BS PERSONALES</x:String>
+                                            <x:String>466 - SICORE-PREMIOS JUEGOS Y C.DEP</x:String>
+                                            <x:String>767 - SICORE - RETENCIONES Y PERCEPC</x:String>
+                                            <x:String>787 - RET ART 79 LEY GCIAS INC A,ByC</x:String>
+                                            <x:String>939 - PERCEPCION IMPUESTO PAIS</x:String>
+                                          </scg:List>
+                                        </ui:SelectItem.Items>
+                                        <ui:SelectItem.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fbfd32d2-f3b5-4796-b157-84277cd0ffcc" InformativeScreenshot="cb02b994935272ba8d37285690ae480d" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='impuestos' rowName='Impuesto retenido   :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SelectItem.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:SelectItem>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Desde" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_9" SimulateType="True" Text="[row(&quot;Desde&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="adae8b8a-a469-427e-adfb-68d34b2883eb" InformativeScreenshot="0c6185a38a1b0887b2848f7b90301bba" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='fechaRetencionDesde' rowName='Fecha Ret./Perc.  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Hasta" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_10" SimulateType="True" Text="[row(&quot;Hasta&quot;).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="adae8b8a-a469-427e-adfb-68d34b2883eb" InformativeScreenshot="61a9b623460945024a5a0b573d8d2ed4" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='fechaRetencionHasta' rowName='Fecha Ret./Perc.  :  ' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Consultar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="127ba47e-1a8c-49ae-ba72-595cca2f595f" InformativeScreenshot="077dde3e32f98ea8420b1a7388a9e882" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl parentname='formulario' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Consultar Mis Retenciones' uipath-html-title='Consultar Mis Retenciones' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                      <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Wait boton" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4" WaitActive="True" WaitVisible="True">
+                                        <ui:WaitUiElementAppear.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a9c874d-09ac-48f6-a083-30b385d540c9" InformativeScreenshot="6076bd22d9dc69527090f178b4b761d7" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Exportar a Excel' innertext='Exportar a Excel' visibleinnertext='Exportar a Excel' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:WaitUiElementAppear.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:WaitUiElementAppear>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Exportar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea071950-3fdf-43f8-86ee-501228785db0" InformativeScreenshot="6076bd22d9dc69527090f178b4b761d7" Selector="&lt;html app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Exportar a Excel' innertext='Exportar a Excel' visibleinnertext='Exportar a Excel' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[Row(&quot;Nombre carpeta&quot;).ToString]" />
+                                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DeselectAfter="True" DisplayName="Ubicacion + Nombre del archivo" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[Row(&quot;Nombre carpeta&quot;).ToString + &quot;\&quot; + Row(&quot;Nombre Archivo&quot;).tostring]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b57ddb09-1ae6-44b7-bdb0-1440dde0486c" InformativeScreenshot="4cff9a97f5d8adc34504dc8fb630b5df" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:TypeInto>
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Guardar" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39fe2c94-c69c-4819-b244-6a4d3e921858" InformativeScreenshot="56f457bbf9a141e6755eb4b8727ecfd7" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd title='&amp;amp;Guardar' aaname='Guardar' cls='Button' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Click>
+                                    </Sequence>
+                                    <Sequence DisplayName="Salida de AFIP" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Hotkey" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="w" KeyModifiers="Ctrl">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2687212-c87e-4bb7-9bc6-02f2ce5ceabb" InformativeScreenshot="465159cebdc73b67f8185d52a210bb0e" Selector="&lt;wnd app='chrome.exe' title='Mis Retenciones - Consulta de Retenciones Impositivas - Google C*' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e16dbbc3-1ae9-4c1a-9755-1a36ae43ceba" InformativeScreenshot="93a0aa4cad9e344d025b7b783d4632ad" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl id='iconoChicoContribuyenteAFIP' parentid='contenedorContribuyente' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Cerrar sesion" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e16dbbc3-1ae9-4c1a-9755-1a36ae43ceba" InformativeScreenshot="93a0aa4cad9e344d025b7b783d4632ad" Selector="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;&lt;webctrl aaname='Cerrar sesión' innertext='Cerrar sesión' visibleinnertext='Cerrar sesión' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                    </Sequence>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ui:OpenBrowser.Body>
+            </ui:OpenBrowser>
+          </Sequence>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">360,454</av:Point>
+                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Fin del proceso" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Proceso terminado&quot;]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MessageBox>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+  </Flowchart>
+</Activity>
